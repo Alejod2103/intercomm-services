@@ -1,0 +1,14 @@
+{
+    "name": "root/contacto",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Root\\Contacto\\": "src/"
+        }
+    },
+    "require": {
+        "stripe/stripe-php": "^10.3",
+        "vlucas/phpdotenv": "^5.5",
+        "guzzlehttp/guzzle": "^7.5"
+    }
+}

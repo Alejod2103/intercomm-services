@@ -133,6 +133,8 @@ body {
   
   #header .logo a {
     color: #fff;
+    text-shadow: 1px 3px 2px #000;
+    font-weight: 700;
   }
   
   #header .logo img {
@@ -167,9 +169,11 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 10px 30px;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
     color: #fff;
+    text-shadow: 2px 2px 3px #000;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -334,7 +338,8 @@ body {
   .navbar-mobile a:focus {
     padding: 10px 20px;
     font-size: 15px;
-    color: #37517e;
+    color: #000;
+    text-shadow: 1px 1px 1px #fff;
   }
   
   .navbar-mobile a:hover,
@@ -357,7 +362,7 @@ body {
     z-index: 99;
     opacity: 1;
     visibility: visible;
-    background: #fff;
+    background: #000;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   }
   
@@ -388,8 +393,10 @@ body {
   --------------------------------------------------------------*/
   #hero {
     width: 100%;
-    height: 80vh;
-    background: #CB3E2F;
+    height: 90vh;
+    background-image: url('https://i.postimg.cc/MKCj0MzG/Imagen-pagina-web.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   #hero .container {
@@ -1940,7 +1947,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-image: url(assets/img/fibrabanner4.jpeg);
+    background-image: url(assets/img/juegos.jpg);
     z-index: 2;
     top: -20%;
     left: -20%;
@@ -1974,6 +1981,7 @@ body {
   
   .mini .mini-content .info h1 {
     color: #fff;
+    text-shadow: 4px 2px 2px #000;
     font-weight: 500;
     font-size: 28px;
     letter-spacing: 0.25px;
@@ -1984,6 +1992,7 @@ body {
     letter-spacing: 1px;
     margin-bottom: 40px;
     color: #fff;
+    text-shadow: 6px 5px 6px #000;
     letter-spacing: 0.25px;
     line-height: 26px;
     font-weight: 400;
@@ -2308,4 +2317,51 @@ contact
   border: none;
   outline: none;
   background-color: #fff;
+}
+
+.numero-titulo{
+  font-size: 18px;
+}
+
+.buttons-cont{
+  display: flex;
+  gap: 20px;
+  justify-items: center;
+} 
+
+
+@media screen and (max-width: 980px) {
+  .buttons-cont{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }  
+}
+
+.datos-footer a p{
+  color: #ff4500;
+  font-size: bold;
+}
+
+.logo-footer{
+  height: 200px;
+}
+
+@media screen and (max-width: 920px) {
+  #footer-top{
+    margin-left: 50px;
+  }
+}
+
+#logo-footer{
+  position: relative;
+  left: 75px;
+  top: -50px;
+}
+
+@media screen and (min-width: 950px) {
+  #links-rapidos{
+    position: relative;
+    left: 60px;
+  }
 }

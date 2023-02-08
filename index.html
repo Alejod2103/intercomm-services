@@ -1,79 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhILjC3hPvzV7miPqKYFndcV5qzYZYLoM&libraries=places&callback=inicializarMapa"></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WD7QZL9");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>INTERCOMM SERVICES</title>
-    <link rel="stylesheet" href="/favicon.svg">
+    <link rel="stylesheet" href="/favicon.svg" />
     <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/assets/css/aos.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap-icons.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/boxicons.min.css">
-    <link rel="stylesheet" href="/assets/css/glightbox.min.css">
-    <link rel="stylesheet" href="/assets/css/remixicon.css">
-    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/assets/css/owl-carousel.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
-   
-</head>
-<body>
-    <header id="header" class="fixed-top">
-        <div class="container d-flex align-items-center">
-          <h1 class="logo me-auto"><a style="text-decoration: none;"  href="index.html">INTERCOMM SERVICES</a></h1>
-          <nav id="navbar" class="navbar">
-            <ul>
-              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-              <li><a class="nav-link scrollto" href="#work-process">¿Por que escogernos?</a></li>
-              <li><a class="nav-link scrollto" href="#about">Sobre Nosotros</a></li>
-              <li><a class="nav-link scrollto" href="#why-us">Beneficios</a></li>
-              <li>
-                <a style="text-decoration: none; text-transform: uppercase; font-weight: bold;" class="getstarted scrollto" href="/contacto">Contactenos</a>
-              </li>
-              <li>
-                <a style="text-decoration: none; text-transform: uppercase; font-weight: bold;" class="getstarted scrollto" href="tel:+1(813)641-4929">+1(813)641-4929</a>
-              </li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav>
-        </div>
-      </header>
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/boxicons.min.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/remixicon.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/owl-carousel.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WD7QZL9"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-      <section id="hero" class="d-flex align-items-center">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
-              data-aos="fade-up"
-              data-aos-delay="200"
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <h1 class="logo me-auto">
+          <a style="text-decoration: none" href="index.html"
+            >INTERCOMM SERVICES</a
+          >
+        </h1>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#work-process"
+                >¿Por que escogernos?</a
+              >
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="#about">Sobre Nosotros</a>
+            </li>
+            <li><a class="nav-link scrollto" href="#why-us">Beneficios</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <a
+              class="numero-titulo"
+              style="
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 55px;
+                text-shadow: 5px 4px 2px #000;
+              "
+              href="tel:+1(813) 641-4929"
+              >(813)641-4929</a
             >
-            <h1 style="text-transform: uppercase;"><a style="text-decoration: none;" href="tel:+1(813) 641-4929">(813)641-4929</a> </h1>
-              <h1 style="text-transform: uppercase;" >El Mejor Servicio de Internet</h1>
-              <h2>
-                Disfruta el mejor servicio de internet mediante fibra optica al precio ideal para ti
-              </h2>
-              <div class="d-flex justify-content-center justify-content-lg-start">
-                <a href="tel:+1(813) 641-4929" style="text-decoration: none;" class="btn-get-started scrollto">¡Llama Hoy!</a>
+            <h1
+              style="text-transform: uppercase; text-shadow: 5px 3px 2px #000"
+            >
+              El Mejor Servicio de Internet
+            </h1>
+            <h2 style="text-shadow: 2px 2px 2px #000; color: #fff">
+              Disfruta el mejor servicio de internet mediante fibra optica al
+              precio ideal para ti
+            </h2>
+            <div
+              class="buttons-cont"
+              style="display: flex; flex-direction: row"
+            >
+              <div
+                class="d-flex justify-content-center justify-content-lg-start"
+              >
+                <a
+                  href="tel:+1(813) 641-4929"
+                  style="text-decoration: none; text-shadow: 2px 2px 2px #000"
+                  class="btn-get-started scrollto"
+                  >¡Llama Hoy!</a
+                >
+              </div>
+              <div
+                style="margin-left: 10px"
+                class="d-flex justify-content-center justify-content-lg-start"
+              >
+                <a
+                  href="/contacto"
+                  style="text-decoration: none; text-shadow: 2px 2px 2px #000"
+                  class="btn-get-started scrollto"
+                  >Contactenos</a
+                >
               </div>
             </div>
+          </div>
+          <div
+            class="col-lg-6 order-1 order-lg-2 hero-img"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <img
+              loading="lazy"
+              src="assets/img/hero-img.png"
+              class="img-fluid animated"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main id="main">
+      <section id="clients" class="clients section-bg">
+        <div class="container">
+          <div class="row" data-aos="zoom-in">
             <div
-              class="col-lg-6 order-1 order-lg-2 hero-img"
-              data-aos="zoom-in"
-              data-aos-delay="200"
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
             >
               <img
-                src="assets/img/hero-img.png"
-                class="img-fluid animated"
+                loading="lazy"
+                src="assets/img/companies/xfinity-logosB.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+            >
+              <img
+                loading="lazy"
+                src="assets/img/companies/at&tsB.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+            >
+              <img
+                loading="lazy"
+                src="assets/img/companies/earthlinksB.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+            >
+              <img
+                loading="lazy"
+                src="assets/img/companies/frontiersB.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+            >
+              <img
+                loading="lazy"
+                src="assets/img/companies/zipplysB.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+            >
+              <img
+                loading="lazy"
+                src="assets/img/companies/spectrumsB.png"
+                class="img-fluid"
                 alt=""
               />
             </div>
@@ -81,217 +226,239 @@
         </div>
       </section>
 
-
-      <main id="main">
-        <section id="clients" class="clients section-bg">
-          <div class="container">
-            <div class="row" data-aos="zoom-in">
-              <div
-                class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-              >
-                <img
-                  src="assets/img/companies/xfinity-logosB.png"
-                  class="img-fluid"
-                  alt=""
-                />
+      <section id="why-us" class="why-us section-bg">
+        <div class="container-fluid" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1"
+            >
+              <div class="content">
+                <h3>
+                  ¡Descubre los beneficios de tener
+                  <strong
+                    >Fibra optica en tu oficina o lugar de trabajo!</strong
+                  >
+                </h3>
+                <p>
+                  Conoce como funciona la fibra óptica y las ventajas que
+                  conlleva tenerla instalada en tu lugar de trabajo. Ha llegado
+                  el momento de que disfrutes de Internet a gran velocidad para
+                  que agilices tus proyectos en la oficina. ¡Descubre todo sobre
+                  la fibra óptica!
+                </p>
               </div>
-              <div
-                class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-              >
-                <img
-                  src="assets/img/companies/at&tsB.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div
-                class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-              >
-                <img
-                  src="assets/img/companies/earthlinksB.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div
-                class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-              >
-                <img
-                  src="assets/img/companies/frontiersB.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div
-                class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-              >
-                <img
-                  src="assets/img/companies/zipplysB.png"
-                  class="img-fluid"
-                  alt=""
-                />
-              </div>
-              <div
-                class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-              >
-                <img
-                  src="assets/img/companies/spectrumsB.png"
-                  class="img-fluid"
-                  alt=""
-                />
+              <div class="accordion-list">
+                <ul>
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      class="collapse"
+                      data-bs-target="#accordion-list-1"
+                      ><span>01</span> VELOCIDAD
+                      <i class="bi bi-info-square"></i>
+                    </a>
+                    <div
+                      id="accordion-list-1"
+                      class="collapse show"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        La verdad es que tu conexión de cable debe ser lo
+                        suficientemente rápida para transmitir video sin
+                        interrupciones, pero el tráfico de datos sobrecarga los
+                        cables. Ahí es donde las diferencias de velocidad entre
+                        internet de fibra óptica y cable se vuelven obvias.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-2"
+                      class="collapsed"
+                      ><span>02</span> MISMA VELOCIDAD DE DESCARGA Y SUBIDA
+                      <i class="bi bi-info-square"></i
+                    ></a>
+                    <div
+                      id="accordion-list-2"
+                      class="collapse"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        Los proveedores de internet de fibra óptica pueden dar
+                        igual importancia a las cargas y descargas. Eso hace que
+                        sea más fácil compartir archivos y trabajar desde casa
+                        con este tipo de servicios.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-list-3"
+                      class="collapsed"
+                      ><span>03</span> TELEVISIÓN DE MAYOR CALIDAD
+                      <i class="bi bi-info-square"></i>
+                    </a>
+                    <div
+                      id="accordion-list-3"
+                      class="collapse"
+                      data-bs-parent=".accordion-list"
+                    >
+                      <p>
+                        ¿Acabas de comprar una televisión 4K o estás pensando en
+                        comprar una? Estas televisiones tienen cuatro veces más
+                        píxeles en el mismo espacio y necesitan una mejor
+                        conexion de internet que solo te brinda la fibra optica.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
+            <div
+              class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+              style="background-image: url('assets/img/why-us.png')"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            >
+              &nbsp;
+            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section id="why-us" class="why-us section-bg">
-          <div class="container-fluid" data-aos="fade-up">
+      <section class="mini" id="work-process">
+        <div class="mini-content">
+          <div class="container">
             <div class="row">
-              <div
-                class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1"
-              >
-                <div class="content">
-                  <h3>
-                    ¡Descubre los beneficios de tener
-                    <strong>Fibra optica en tu oficina o lugar de trabajo!</strong>
-                  </h3>
+              <div class="offset-lg-3 col-lg-6">
+                <div class="info">
+                  <h1 style="text-transform: uppercase; font-weight: bold">
+                    ¿Por qué elegirnos?
+                  </h1>
                   <p>
-                   Conoce como funciona la fibra óptica y las ventajas que conlleva tenerla instalada en tu lugar de trabajo. Ha llegado el momento de que disfrutes de Internet a gran velocidad para que agilices tus proyectos en la oficina. ¡Descubre todo sobre la fibra óptica!
+                    Obtenga un servicio de calidad y al precio ideal hoy mismo.
                   </p>
                 </div>
-                <div class="accordion-list">
-                  <ul>
-                    <li>
-                      <a
-                        data-bs-toggle="collapse"
-                        class="collapse"
-                        data-bs-target="#accordion-list-1"
-                        ><span>01</span> VELOCIDAD <i class="bi bi-info-square"></i>
-                      </a>
-                      <div
-                        id="accordion-list-1"
-                        class="collapse show"
-                        data-bs-parent=".accordion-list"
-                      >
-                        <p>
-                          La verdad es que tu conexión de cable debe ser lo suficientemente rápida para transmitir video sin interrupciones, pero el tráfico de datos sobrecarga los cables. Ahí es donde las diferencias de velocidad entre internet de fibra óptica y cable se vuelven obvias.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <a
-                        data-bs-toggle="collapse"
-                        data-bs-target="#accordion-list-2"
-                        class="collapsed"
-                        ><span>02</span> MISMA VELOCIDAD DE DESCARGA Y SUBIDA <i class="bi bi-info-square"></i></a>
-                      <div
-                        id="accordion-list-2"
-                        class="collapse"
-                        data-bs-parent=".accordion-list"
-                      >
-                        <p>
-                          Los proveedores de internet de fibra óptica pueden dar igual importancia a las cargas y descargas. Eso hace que sea más fácil compartir archivos y trabajar desde casa con este tipo de servicios.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <a
-                        data-bs-toggle="collapse"
-                        data-bs-target="#accordion-list-3"
-                        class="collapsed"
-                        ><span>03</span> TELEVISIÓN DE MAYOR CALIDAD <i class="bi bi-info-square"></i> </a>
-                      <div
-                        id="accordion-list-3"
-                        class="collapse"
-                        data-bs-parent=".accordion-list"
-                      >
-                        <p>
-                          ¿Acabas de comprar una televisión 4K o estás pensando en comprar una? Estas televisiones tienen cuatro veces más píxeles en el mismo espacio y necesitan una mejor conexion de internet que solo te brinda la fibra optica.
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
-                style="background-image: url('assets/img/why-us.png')"
-                data-aos="zoom-in"
-                data-aos-delay="150"
-              >
-                &nbsp;
               </div>
             </div>
-          </div>
-        </section>
 
-        <section class="mini" id="work-process">
-          <div class="mini-content">
-              <div class="container">
-                  <div class="row">
-                      <div class="offset-lg-3 col-lg-6">
-                          <div class="info">
-                              <h1 style="text-transform: uppercase; font-weight: bold;" >¿Por qué elegirnos?</h1>
-                              <p>Obtenga un servicio de calidad y al precio ideal hoy mismo.</p>
-                          </div>
-                      </div>
-                  </div>
-  
-                  <!-- ***** Mini Box Start ***** -->
-                  <div class="row">
-                      <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                          <a style="text-transform: uppercase;" href="#" class="mini-box">
-                              <i><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-incognito" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="m4.736 1.968-.892 3.269-.014.058C2.113 5.568 1 6.006 1 6.5 1 7.328 4.134 8 8 8s7-.672 7-1.5c0-.494-1.113-.932-2.83-1.205a1.032 1.032 0 0 0-.014-.058l-.892-3.27c-.146-.533-.698-.849-1.239-.734C9.411 1.363 8.62 1.5 8 1.5c-.62 0-1.411-.136-2.025-.267-.541-.115-1.093.2-1.239.735Zm.015 3.867a.25.25 0 0 1 .274-.224c.9.092 1.91.143 2.975.143a29.58 29.58 0 0 0 2.975-.143.25.25 0 0 1 .05.498c-.918.093-1.944.145-3.025.145s-2.107-.052-3.025-.145a.25.25 0 0 1-.224-.274ZM3.5 10h2a.5.5 0 0 1 .5.5v1a1.5 1.5 0 0 1-3 0v-1a.5.5 0 0 1 .5-.5Zm-1.5.5c0-.175.03-.344.085-.5H2a.5.5 0 0 1 0-1h3.5a1.5 1.5 0 0 1 1.488 1.312 3.5 3.5 0 0 1 2.024 0A1.5 1.5 0 0 1 10.5 9H14a.5.5 0 0 1 0 1h-.085c.055.156.085.325.085.5v1a2.5 2.5 0 0 1-5 0v-.14l-.21-.07a2.5 2.5 0 0 0-1.58 0l-.21.07v.14a2.5 2.5 0 0 1-5 0v-1Zm8.5-.5h2a.5.5 0 0 1 .5.5v1a1.5 1.5 0 0 1-3 0v-1a.5.5 0 0 1 .5-.5Z"/>
-                              </svg></i>
-                              <strong style="font-weight: bold;" >Brindamos Seguridad</strong>
-                          </a>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                          <a href="#" class="mini-box">
-                              <i><svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-speedometer" viewBox="0 0 16 16">
-                                <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
-                                <path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z"/>
-                              </svg></i>
-                              <strong>Máxima velocidad de Internet</strong>
-                          </a>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                          <a href="#" class="mini-box">
-                              <i><svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-shield-fill-exclamation" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-                              </svg></i>
-                              <strong>Menos Ciberataques</strong>
-                          </a>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                          <a href="#" class="mini-box">
-                              <i><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">
-                                <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/>
-                              </svg></i>
-                              <strong>Estabilidad de señal</strong>
-                          </a>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                          <a href="#" class="mini-box">
-                              <i><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
-                              </svg></i>
-                              <strong>Más ancho de banda</strong>
-                          </a>
-                      </div>
-                      <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                          <a href="#" class="mini-box">
-                              <i><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-braces-asterisk" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C2.25 2 1.49 2.759 1.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6ZM14.886 7.9v.164c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456v-1.3c-1.114 0-1.49-.362-1.49-1.456V4.352C14.51 2.759 13.75 2 12.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6ZM7.5 11.5V9.207l-1.621 1.621-.707-.707L6.792 8.5H4.5v-1h2.293L5.172 5.879l.707-.707L7.5 6.792V4.5h1v2.293l1.621-1.621.707.707L9.208 7.5H11.5v1H9.207l1.621 1.621-.707.707L8.5 9.208V11.5h-1Z"/>
-                              </svg></i>
-                              <strong>Optimizado para tu Hogar</strong>
-                          </a>
-                      </div>
-                  </div>
-                  <!-- ***** Mini Box End ***** -->
+            <!-- ***** Mini Box Start ***** -->
+            <div class="row">
+              <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                <a style="text-transform: uppercase" href="#" class="mini-box">
+                  <i
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="64"
+                      height="64"
+                      fill="currentColor"
+                      class="bi bi-incognito"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="m4.736 1.968-.892 3.269-.014.058C2.113 5.568 1 6.006 1 6.5 1 7.328 4.134 8 8 8s7-.672 7-1.5c0-.494-1.113-.932-2.83-1.205a1.032 1.032 0 0 0-.014-.058l-.892-3.27c-.146-.533-.698-.849-1.239-.734C9.411 1.363 8.62 1.5 8 1.5c-.62 0-1.411-.136-2.025-.267-.541-.115-1.093.2-1.239.735Zm.015 3.867a.25.25 0 0 1 .274-.224c.9.092 1.91.143 2.975.143a29.58 29.58 0 0 0 2.975-.143.25.25 0 0 1 .05.498c-.918.093-1.944.145-3.025.145s-2.107-.052-3.025-.145a.25.25 0 0 1-.224-.274ZM3.5 10h2a.5.5 0 0 1 .5.5v1a1.5 1.5 0 0 1-3 0v-1a.5.5 0 0 1 .5-.5Zm-1.5.5c0-.175.03-.344.085-.5H2a.5.5 0 0 1 0-1h3.5a1.5 1.5 0 0 1 1.488 1.312 3.5 3.5 0 0 1 2.024 0A1.5 1.5 0 0 1 10.5 9H14a.5.5 0 0 1 0 1h-.085c.055.156.085.325.085.5v1a2.5 2.5 0 0 1-5 0v-.14l-.21-.07a2.5 2.5 0 0 0-1.58 0l-.21.07v.14a2.5 2.5 0 0 1-5 0v-1Zm8.5-.5h2a.5.5 0 0 1 .5.5v1a1.5 1.5 0 0 1-3 0v-1a.5.5 0 0 1 .5-.5Z"
+                      /></svg></i>
+                  <strong style="font-weight: bold">Brindamos Seguridad</strong>
+                </a>
               </div>
+              <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                <a href="#" class="mini-box">
+                  <i
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="55"
+                      height="55"
+                      fill="currentColor"
+                      class="bi bi-speedometer"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z"
+                      /></svg></i>
+                  <strong>Máxima velocidad de Internet</strong>
+                </a>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                <a href="#" class="mini-box">
+                  <i
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="66"
+                      height="66"
+                      fill="currentColor"
+                      class="bi bi-shield-fill-exclamation"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm-.55 8.502L7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0zM8.002 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
+                      /></svg></i>
+                  <strong>Menos Ciberataques</strong>
+                </a>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                <a href="#" class="mini-box">
+                  <i><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="64"
+                      height="64"
+                      fill="currentColor"
+                      class="bi bi-reception-4"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"
+                      /></svg></i>
+                  <strong>Estabilidad de señal</strong>
+                </a>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                <a href="#" class="mini-box">
+                  <i
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="64"
+                      height="64"
+                      fill="currentColor"
+                      class="bi bi-arrow-down-up"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"
+                      /></svg></i>
+                  <strong>Más ancho de banda</strong>
+                </a>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+                <a href="#" class="mini-box">
+                  <i
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="64"
+                      height="64"
+                      fill="currentColor"
+                      class="bi bi-braces-asterisk"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C2.25 2 1.49 2.759 1.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6ZM14.886 7.9v.164c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456v-1.3c-1.114 0-1.49-.362-1.49-1.456V4.352C14.51 2.759 13.75 2 12.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6ZM7.5 11.5V9.207l-1.621 1.621-.707-.707L6.792 8.5H4.5v-1h2.293L5.172 5.879l.707-.707L7.5 6.792V4.5h1v2.293l1.621-1.621.707.707L9.208 7.5H11.5v1H9.207l1.621 1.621-.707.707L8.5 9.208V11.5h-1Z"
+                      /></svg></i>
+                  <strong>Optimizado para tu Hogar</strong>
+                </a>
+              </div>
+            </div>
+            <!-- ***** Mini Box End ***** -->
           </div>
+        </div>
       </section>
 
       <section id="about" class="about">
@@ -300,390 +467,533 @@
           <div class="row content">
             <div class="col-lg-6">
               <p>
-                Soprendete con la velocidad y calidad de servicio que solo la fibra optica te brinda, al precio ideal para ti.
+                Soprendete con la velocidad y calidad de servicio que solo la
+                fibra optica te brinda, al precio ideal para ti.
               </p>
               <ul>
                 <li>
-                  <i class="bi bi-router"></i> La latencia de transmisión de datos por fibra es mucho más rápida que en otros sistemas.
+                  <i class="bi bi-router"></i> La latencia de transmisión de
+                  datos por fibra es mucho más rápida que en otros sistemas.
                 </li>
                 <li>
-                  <i class="bi bi-wifi"></i> El ancho de banda es lo primero que vemos cuando contratamos a un proveedor de fibra óptica
+                  <i class="bi bi-wifi"></i> El ancho de banda es lo primero que
+                  vemos cuando contratamos a un proveedor de fibra óptica
                 </li>
                 <li>
-                  <i class="bi bi-shield-lock"></i> En la fibra óptica el intrusismo se detecta con mucha más facilidad, por lo que es más complicado el robo o intervenir las transmisiones de datos.
+                  <i class="bi bi-shield-lock"></i> En la fibra óptica el
+                  intrusismo se detecta con mucha más facilidad, por lo que es
+                  más complicado el robo o intervenir las transmisiones de
+                  datos.
                 </li>
               </ul>
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0">
               <p>
-                  Entre las principales preocupaciones de los clientes y usuarios de tecnología se encuentra la seguridad y velocidad de internet, que brinda una red de fibra óptica, ya que vale la pena en comparación con otras alternativas.
-                  De todas las opciones en instalación de internet, es posible que las ofertas no se ajusten a las realidades y necesidades de tu negocio.
-                  La mejor opción de conectividad para internet siempre será a través de fibra óptica, porque posee características que impactarán favorablemente en tu empresa como: menos ciberataques, mayor velocidad y menos probabilidad de caídas en la señal.
+                Entre las principales preocupaciones de los clientes y usuarios
+                de tecnología se encuentra la seguridad y velocidad de internet,
+                que brinda una red de fibra óptica, ya que vale la pena en
+                comparación con otras alternativas. De todas las opciones en
+                instalación de internet, es posible que las ofertas no se
+                ajusten a las realidades y necesidades de tu negocio. La mejor
+                opción de conectividad para internet siempre será a través de
+                fibra óptica, porque posee características que impactarán
+                favorablemente en tu empresa como: menos ciberataques, mayor
+                velocidad y menos probabilidad de caídas en la señal.
               </p>
-              <a href="#contact-us" class="btn-learn-more" >¡Solicitar Ahora!</a>
+              <a href="#contact-us" class="btn-learn-more">¡Solicitar Ahora!</a>
             </div>
           </div>
         </div>
       </section>
 
-        <section id="skills" class="skills">
-          <div class="container" data-aos="fade-up">
-            <div class="row">
-              <div
-                class="col-lg-6 d-flex align-items-center"
-                data-aos="fade-right"
-                data-aos-delay="100"
-              >
-                <img src="assets/img/skills.png" class="img-fluid" alt="" />
-              </div>
-              <div
-                class="col-lg-6 pt-4 pt-lg-0 content"
-                data-aos="fade-left"
-                data-aos-delay="100"
-              >
-                <h3>
-                  Mejores resultados gracias la velocidad de la fibra.
-                </h3>
-                <p class="fst-italic">
-                  Ademas de permitirnos conectar multiples disitivos a la red, la fibra optica nos brinda un excelente rendimiento al navegar en actividades cotidianas.
-                </p>
-                <div class="skills-content">
-                  <div class="progress">
-                    <span class="skill">Velocidad de transferencia en red local.</span>
-                    <div class="progress-bar-wrap">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        aria-valuenow="100"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
+      <section id="skills" class="skills">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-lg-6 d-flex align-items-center"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
+              <img loading="lazy" src="assets/img/skills.png" class="img-fluid" alt="" />
+            </div>
+            <div
+              class="col-lg-6 pt-4 pt-lg-0 content"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <h3>Mejores resultados gracias la velocidad de la fibra.</h3>
+              <p class="fst-italic">
+                Ademas de permitirnos conectar multiples disitivos a la red, la
+                fibra optica nos brinda un excelente rendimiento al navegar en
+                actividades cotidianas.
+              </p>
+              <div class="skills-content">
+                <div class="progress">
+                  <span class="skill"
+                    >Velocidad de transferencia en red local.</span
+                  >
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
-                  <div class="progress">
-                    <span class="skill">Velocidad de descarga en archivos de internet.</span>
-                    <div class="progress-bar-wrap">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        aria-valuenow="90"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
+                </div>
+                <div class="progress">
+                  <span class="skill"
+                    >Velocidad de descarga en archivos de internet.</span
+                  >
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
-                  <div class="progress">
-                    <span class="skill">velocidad de streaming (Netflix, Youtube, Amazon Prime, Etc)</span>
-                    <div class="progress-bar-wrap">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        aria-valuenow="75"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
+                </div>
+                <div class="progress">
+                  <span class="skill"
+                    >velocidad de streaming (Netflix, Youtube, Amazon Prime,
+                    Etc)</span
+                  >
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
-                  <div class="progress">
-                    <span class="skill">Proteccion y Privacidad de red</span>
-                    <div class="progress-bar-wrap">
-                      <div
-                        class="progress-bar"
-                        role="progressbar"
-                        aria-valuenow="55"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
+                </div>
+                <div class="progress">
+                  <span class="skill">Proteccion y Privacidad de red</span>
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="55"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-
-
-
-        <section id="pricing" class="pricing">
-          <div class="container" data-aos="fade-up">
-            <div class="section-title">
-              <h2>Conoce Nuestros Planes</h2>
-              <p>
-                Obten un servicio de calidad y alta velocidad perfecto para ti y descubre los beneficios que tenemos para ofrecerte.
-              </p>
-            </div>
-            <div class="row">
-              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="box">
-                  <h3 class="titulo-price">Con otras compañias...</h3>
-                  <h4 style="color: #FF0000;" ><sup>$</sup>170+<span style="color: #FF0000;" >Mensuales</span></h4>
-                  <ul>
-                    <li>
-                      <i class="bi bi-check2-circle"></i> Conexion a internet promedio
-                    </li>
-                    <li><i class="bi bi-check2-circle"></i> velocidad de descarga propenso a caídas</li>
-                    <li>
-                      <i class="bi bi-check2-circle"></i> baja cobertura de red
-                    </li>
-                    <li class="na">
-                      <i class="bi bi-x-circle"></i>
-                      <span> Conexion con multiples dispositivos</span>
-                    </li>
-                    <li class="na">
-                      <i class="bi bi-x-circle"></i>
-                      <span> Firewall de red para evitar ataques</span>
-                    </li>
-                  </ul>  
-                </div>
+      <section id="pricing" class="pricing">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Conoce Nuestros Planes</h2>
+            <p>
+              Obten un servicio de calidad y alta velocidad perfecto para ti y
+              descubre los beneficios que tenemos para ofrecerte.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="box">
+                <h3 class="titulo-price">Con otras compañias...</h3>
+                <h4 style="color: #ff0000">
+                  <sup>$</sup>170+<span style="color: #ff0000">Mensuales</span>
+                </h4>
+                <ul>
+                  <li>
+                    <i class="bi bi-check2-circle"></i> Conexion a internet
+                    promedio
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-circle"></i> velocidad de descarga
+                    propenso a caídas
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-circle"></i> baja cobertura de red
+                  </li>
+                  <li class="na">
+                    <i class="bi bi-x-circle"></i>
+                    <span> Conexion con multiples dispositivos</span>
+                  </li>
+                  <li class="na">
+                    <i class="bi bi-x-circle"></i>
+                    <span> Firewall de red para evitar ataques</span>
+                  </li>
+                </ul>
               </div>
+            </div>
 
-
-              <div
+            <div
               class="col-lg-4 mt-4 mt-lg-0"
               data-aos="fade-up"
               data-aos-delay="200"
             >
               <div class="box featured">
-                <div class="oferta-price" >
-                    <h1>¡Más Ahorro!</h1>
+                <div class="oferta-price">
+                  <h1>¡Más Ahorro!</h1>
                 </div>
-                <h3 class="titulo-price">Servicio de fibra ULTRA</h3>
-                <h4><sup>$</sup>69<small style="font-size: 14px;" >.99</small><span> Mensuales</span></h4>
+                <h3 class="titulo-price">SERVICIO DE ASISTENCIA PREMIUM</h3>
+                <h4>
+                  <sup>$</sup>124<small style="font-size: 14px">.99</small
+                  ><span> Pago Único </span>
+                </h4>
                 <ul>
                   <li>
-                    <i class="bi bi-cloud-arrow-down"></i> Mayor velocidad de descarga optima
-                  </li>
-                  <li><i class="bi bi-tv"></i> Dedicado a streaming de video</li>
-                  <li>
-                    <i class="bi bi-reception-4"></i> Cobertura completa
+                    <i class="bi bi-cloud-arrow-down"></i> Mayor velocidad de
+                    descarga optima
                   </li>
                   <li>
-                    <i class="bi bi-pc-display"></i> Conexion hasta para 15+ dispositivos
+                    <i class="bi bi-cash-stack"></i> Reduccion en la tarifa de bills en servicios hogar
+                  </li>
+                  <li><i class="bi bi-reception-4"></i> Cobertura completa</li>
+                  <li>
+                    <i class="bi bi-pc-display"></i> Conexion hasta para 15+
+                    dispositivos
                   </li>
                   <li>
-                    <i class="bi bi-joystick"></i> Ideal para juegos y descargas
+                    <i class="bi bi-person-workspace"></i> Asistencia para todo tipo de inconvenientes
                   </li>
                   <li>
-                    <i class="bi bi-gear-wide-connected"></i> Optimizado para todos tus dispositivos
+                    <i class="bi bi-gear-wide-connected"></i> Optimizado para
+                    todos tus dispositivos
                   </li>
                   <li>
-                    <i class="bi bi-infinity"></i> Conexion de descarga Ilimitada
+                    <i class="bi bi-bell-fill"></i> Proteccion y notificacion ante aumento de bills
+                  </li>
+                  <li>
+                    <i class="bi bi-infinity"></i> Conexion de descarga
+                    Ilimitada
                   </li>
                 </ul>
-                <a style="text-decoration: none;"  href="tel:+1(813)641-4929" class="buy-btn">¡Contáctanos!</a>
+                <a
+                  style="text-decoration: none"
+                  href="/checkoutultra"
+                  class="buy-btn"
+                  >Solicitar Ahora</a
+                >
               </div>
             </div>
 
-
-          <div
-                class="col-lg-4 mt-4 mt-lg-0"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <div class="box">
-                  <h3 class="titulo-price">Servicio de fibra estándard</h3>
-                  <h4><sup>$</sup>49<small style="font-size: 14px;" >.99</small><span> Mensuales</span></h4>
-                  <ul>
-                    <li>
-                      <i class="bi bi-cloud-arrow-down"></i> Mayor velocidad de descarga optima
-                    </li>
-                    <li><i class="bi bi-tv"></i>Dedicado a streaming de video</li>
-                    <li>
-                      <i class="bi bi-reception-4"></i> Cobertura completa
-                    </li>
-                    <li>
-                      <i class="bi bi-pc-display"></i> Conexion de 1 a 8 dispositivos
-                    </li>
-                    <li>
-                      <i class="bi bi-shield-lock"></i> Firewall de privacidad contra fraudes
-                    </li>
-                  </ul>
-                  <a style="text-decoration: none;" href="tel:+1(813)641-4929" class="buy-btn">¡Contáctanos!</a>
+            <div
+              class="col-lg-4 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="box">
+                <h3 class="titulo-price">SERVICIO DE ASISTENCIA ESTANDARD</h3>
+                <h4>
+                  <sup>$</sup>84<small style="font-size: 14px">.99</small
+                  ><span> Pago Único </span>
+                </h4>
+                <ul>
+                  <li>
+                    <i class="bi bi-cloud-arrow-down"></i> Mayor velocidad de
+                    descarga optima
+                  </li>
+                  <li>
+                    <i class="bi bi-house-heart-fill"></i> Asistencia en desperfectos del hogar, servicios varios
+                  </li>
+                  <li><i class="bi bi-tv"></i>Dedicado a streaming de video</li>
+                  <li><i class="bi bi-wallet2"></i>Ayuda con el pago de bills</li>
+                  <li><i class="bi bi-database-fill-down"></i>Reduccion en la tarifa de bills en servicios hogar</li>
+                  <li><i class="bi bi-reception-4"></i> Cobertura completa</li>
+                  <li>
+                    <i class="bi bi-pc-display"></i> Conexion de 1 a 8
+                    dispositivos
+                  </li>
+                  <li>
+                    <i class="bi bi-shield-lock"></i> Firewall de privacidad
+                    contra fraudes
+                  </li>
+                </ul>
+                <a
+                  style="text-decoration: none"
+                  href="/checkoutbasic"
+                  class="buy-btn"
+                  >Solicitar Ahora</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq" class="faq section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Preguntas Frecuentes</h2>
+          </div>
+          <div class="faq-list">
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bi bi-dot icon-help"></i>
+                <a
+                  style="text-decoration: none"
+                  data-bs-toggle="collapse"
+                  class="collapse"
+                  data-bs-target="#faq-list-1"
+                  >¿ES MEJOR LA FIBRA OPTICA QUE EL CABLE COAXIAL?
+                  <i class="bx bi-question-circle icon-show"></i
+                  ><i class="bx bi-question-circle icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-1"
+                  class="collapse show"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    La respuesta es un rotundo 'si' ya que la fibra optica
+                    comparte la informacion a travez de la luz por lo que
+                    tenemos mejores resultados en la fibra optica.
+                  </p>
                 </div>
-              </div>
-
-            </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bi-dot icon-help"></i>
+                <a
+                  style="text-decoration: none"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-2"
+                  class="collapsed"
+                  >¿CUANTOS DISPOSITIVOS PUEDO CONECTAR AL WIFI?
+                  <i class="bx bi-question-circle icon-show"></i
+                  ><i class="bx bi-question-circle icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-2"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    El servicio de fibra optica tiene menos restricciones para
+                    alojar dispostivos por lo cual puedes conectar hasta 15
+                    aparatos si lo necesitas.
+                  </p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bx bi-dot icon-help"></i>
+                <a
+                  style="text-decoration: none"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-list-3"
+                  class="collapsed"
+                  >¿EXISTEN COSTOS EXTRA POR EL SERVICIO?
+                  <i class="bx bi-question-circle icon-show"></i
+                  ><i class="bx bi-question-circle icon-close"></i
+                ></a>
+                <div
+                  id="faq-list-3"
+                  class="collapse"
+                  data-bs-parent=".faq-list"
+                >
+                  <p>
+                    Sin gastos escondidos, ni sorpresas al momento de pagar tu
+                    factura, disfruta del mejor servicio de internet al precio
+                    ideal.
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
-        </section>
-        <section id="faq" class="faq section-bg">
-          <div class="container" data-aos="fade-up">
-            <div class="section-title">
-              <h2>Preguntas Frecuentes</h2>
-            </div>
-            <div class="faq-list">
-              <ul>
-                <li data-aos="fade-up" data-aos-delay="100">
-                  <i class="bx bi bi-dot icon-help"></i>
-                  <a
-                    style="text-decoration: none;"
-                    data-bs-toggle="collapse"
-                    class="collapse"
-                    data-bs-target="#faq-list-1"
-                    >¿ES MEJOR LA FIBRA OPTICA QUE EL CABLE COAXIAL?
-                    <i class="bx bi-question-circle icon-show"></i
-                    ><i class="bx bi-question-circle icon-close"></i
-                  ></a>
-                  <div
-                    id="faq-list-1"
-                    class="collapse show"
-                    data-bs-parent=".faq-list"
-                  >
-                    <p>
-                      La respuesta es un rotundo 'si' ya que la fibra optica comparte la informacion a travez de la luz por lo que tenemos mejores resultados en la fibra optica.
-                    </p>
-                  </div>
-                </li>
-                <li data-aos="fade-up" data-aos-delay="200">
-                  <i class="bx bi-dot icon-help"></i>
-                  <a
-                    style="text-decoration: none;"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#faq-list-2"
-                    class="collapsed"
-                    >¿CUANTOS DISPOSITIVOS PUEDO CONECTAR AL WIFI?
-                    <i class="bx bi-question-circle icon-show"></i
-                    ><i class="bx bi-question-circle icon-close"></i
-                  ></a>
-                  <div
-                    id="faq-list-2"
-                    class="collapse"
-                    data-bs-parent=".faq-list"
-                  >
-                    <p>
-                      El servicio de fibra optica tiene menos restricciones para alojar dispostivos por lo cual puedes conectar hasta 15 aparatos si lo necesitas.
-                    </p>
-                  </div>
-                </li>
-                <li data-aos="fade-up" data-aos-delay="300">
-                  <i class="bx bi-dot icon-help"></i>
-                  <a
-                    style="text-decoration: none;"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#faq-list-3"
-                    class="collapsed"
-                    >¿EXISTEN COSTOS EXTRA POR EL SERVICIO?
-                    <i class="bx bi-question-circle icon-show"></i
-                    ><i class="bx bi-question-circle icon-close"></i
-                  ></a>
-                  <div
-                    id="faq-list-3"
-                    class="collapse"
-                    data-bs-parent=".faq-list"
-                  >
-                    <p>
-                      Sin gastos escondidos, ni sorpresas al momento de pagar tu factura, disfruta del mejor servicio de internet al precio ideal.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
-          <!-- ***** Contact Us Start ***** -->
+    <!-- ***** Contact Us Start ***** -->
     <section class="section colored" id="contact-us">
       <div class="container">
-          <!-- ***** Section Title Start ***** -->
-          <div class="row">
-              <div class="col-lg-12">
-                  <div class="center-heading">
-                      <h2 class="section-title">¡Contactenos Hoy!</h2>
-                  </div>
-              </div>
-              <div class="offset-lg-3 col-lg-6">
-                  <div class="center-text">
-                      <p>Obtenga una cotizacion gratuita hoy mismo, conozca mas beneficios y como podemos ayudarte a ahorrar dinero.</p>
-                  </div>
-              </div>
+        <!-- ***** Section Title Start ***** -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="center-heading">
+              <h2 class="section-title">¡Contactenos Hoy!</h2>
+            </div>
           </div>
-          <!-- ***** Section Title End ***** -->
-
-          <div class="row">
-              <!-- ***** Contact Text Start ***** -->
-              <div class="col-lg-3 col-md-6 footer-contact">
-                <h3 style="text-transform: uppercase; font-weight: bold; color: #262D56;" >Intercomm Services</h3>
-                <p>
-                  426 Five Points <br />
-                  Maryland, MD 212002<br />
-                  United States <br /><br />
-                  <strong>Phone:</strong> +1(813)641-4929<br />
-                  <strong>Email:</strong><a>contact@multiservicecall.com</a
-                  ><br />
-                </p>
-              </div>
-              <!-- ***** Contact Text End ***** -->
-
-              <!-- ***** Contact Form Start ***** -->
-              <div class="col-lg-8 col-md-6 col-sm-12">
-                  <div class="contact-form">
-                      <form id="contact" action="envio.php" method="get">
-                        <div class="row">
-                          <div class="col-lg-6 col-md-12 col-sm-12">
-                            <fieldset>
-                              <input name="nombre" type="text" class="form-control" id="nombre" placeholder="Nombre" required="">
-                            </fieldset>
-                          </div>
-                          <div class="col-lg-6 col-md-12 col-sm-12">
-                            <fieldset>
-                              <input name="apellido" type="text" class="form-control" id="apellido" placeholder="Apellido" required="">
-                            </fieldset>
-                          </div>
-                          <div class="col-lg-6 col-md-12 col-sm-12">
-                            <fieldset>
-                              <input name="telefono" type="text" class="form-control" id="telefono" placeholder="telefono" required="">
-                            </fieldset>
-                          </div>
-                          <div class="col-lg-6 col-md-12 col-sm-12">
-                            <fieldset>
-                              <input name="email" type="email" class="form-control" id="email" placeholder="Direccion de E-Mail" required="">
-                            </fieldset>
-                          </div>
-                          <div class="col-lg-12">
-                            <fieldset>
-                              <textarea name="mensaje" rows="6" class="form-control" id="mensaje" placeholder="Comentarios" required=""></textarea>
-                            </fieldset>
-                          </div>
-                            <div class="g-recaptcha" data-sitekey="6Lf0Ln4jAAAAAPtgv7-L8stJo2CmYAj1dcq9mff6"></div>
-
-                            <button class="boton-hp" >
-                              <input type="submit" value="Enviar Ahora!" style="color: #fff;" class="contact100-form-btn"></input>
-                            </button>
-                          
-                        </div>
-                      </form>
-                  </div>
-              </div>
-              <!-- ***** Contact Form End ***** -->
-          </div>
-      </div>
-  </section>
-
-      <footer id="footer">
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-
+          <div class="offset-lg-3 col-lg-6">
+            <div class="center-text">
+              <p>
+                Obtenga una cotizacion gratuita hoy mismo, conozca mas
+                beneficios y como podemos ayudarte a ahorrar dinero.
+              </p>
             </div>
           </div>
         </div>
-        <div class="container footer-bottom clearfix">
-          <div class="copyright">
-            &copy; Copyright <strong><span>Fibra-Latino</span></strong
-            >. Todos los derechos reservados.
-          </div>
-        </div>
-      </footer>
+        <!-- ***** Section Title End ***** -->
 
-      <script src="assets/js/bootstrap.bundle.min.js" ></script>
-      <script src="assets/js/glightbox.min.js" ></script>
-      <script src="assets/js/isotope.pkgd.min.js" ></script>
-      <script src="assets/js/swiper-bundle.min.js" ></script>
-      <script src="assets/js/aos.js" ></script>
-      <script src="assets/js/noframework.waypoints.js" ></script>
-      <script src="assets/js/email-decode.min.js" ></script>
-      <script src="assets/js/validate.js" ></script>
-      <script src="assets/js/main.js"></script>
-</body>
+        <div class="row">
+          <!-- ***** Contact Text Start ***** -->
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3
+              style="
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #262d56;
+              "
+            >
+              Intercomm Services
+            </h3>
+            <p>
+              426 Five Points <br />
+              Maryland, MD 212002<br />
+              United States <br /><br />
+              <strong>Phone:</strong> +1(813)641-4929<br />
+              <strong>Email:</strong><a>contact@multiservicecall.com</a><br />
+            </p>
+          </div>
+          <!-- ***** Contact Text End ***** -->
+
+          <!-- ***** Contact Form Start ***** -->
+          <div class="col-lg-8 col-md-6 col-sm-12">
+            <div class="contact-form">
+              <form id="contact" action="envio.php" method="POST">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input
+                        name="nombre"
+                        type="text"
+                        class="form-control"
+                        id="nombre"
+                        placeholder="Nombre"
+                        required=""
+                      />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input
+                        name="apellido"
+                        type="text"
+                        class="form-control"
+                        id="apellido"
+                        placeholder="Apellido"
+                        required=""
+                      />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input
+                        name="telefono"
+                        type="text"
+                        class="form-control"
+                        id="telefono"
+                        placeholder="telefono"
+                        required=""
+                      />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input
+                        name="email"
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Direccion de E-Mail"
+                        required=""
+                      />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea
+                        name="mensaje"
+                        rows="6"
+                        class="form-control"
+                        id="mensaje"
+                        placeholder="Comentarios"
+                        required=""
+                      ></textarea>
+                    </fieldset>
+                  </div>
+                  <div
+                    class="g-recaptcha"
+                    data-sitekey="6Lf0Ln4jAAAAAPtgv7-L8stJo2CmYAj1dcq9mff6"
+                  ></div>
+
+                  <button
+                    type="submit"
+                    value="Enviar Ahora!"
+                    style="color: #fff"
+                    class="contact100-form-btn"
+                  >
+                    Enviar Ahora
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- ***** Contact Form End ***** -->
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="row pt-5" id="footer-top">
+        <div class="col-lg-3 col-md-6 mb-5" id="logo-footer" >
+            <a href="/" class="navbar-brand">
+                <img class="logo-footer"  src="assets/img/intercom.png" alt="">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5" id="links-rapidos" >
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Links Rapidos</h5>
+            <div class="d-flex flex-column justify-content-start" style="color: #ff4500; font-weight: 400;" >
+                <a class="mb-2" href="#work-process"><i class="fa fa-angle-right mr-2">¿Por que escogernos?</i></a>
+                <a class="mb-2" href="#about"><i class="fa fa-angle-right mr-2"></i>Sobre Nosotros</a>
+                <a class="mb-2" href="#why-us"><i class="fa fa-angle-right mr-2"></i>Beneficios</a>
+            </div>
+        </div>
+        <div class="datos-footer col-lg-3 col-md-6 mb-5">
+            <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contactenos</h5>
+            <p style="color: #ff4500; font-weight: 400;" ><i class="fa fa-map-marker-alt mr-2"></i>4427 Coplin Avenue,  Phoenix, Arizona, 85003</p>
+            <a href="tel:+1(813)641-4929"><p><i class="fa fa-phone-alt mr-2"></i>+1(813)641-4929</p></a>
+            <a href="mailto:contact@multiservicecall.com"><p><i class="fa fa-phone-alt mr-2"></i>contact@multiservicecall.com</p></a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+          <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Legal & Otros</h5>
+          <a href="/politica-y-privacidad">
+            <p><i class="fa fa-phone-alt mr-2"></i>Politicas de Privacidad</p>
+          </a>
+          <a href="/cookie-policy">
+            <p><i class="fa fa-phone-alt mr-2"></i>Politica de Cookies</p>
+          </a>
+          <a href="/terms-of-service">
+            <p><i class="fa fa-phone-alt mr-2"></i>Terminos y Condiciones</p>
+          </a>
+          <a href="/politica-de-reembolso">
+            <p><i class="fa fa-phone-alt mr-2"></i>Politica de reembolso</p>
+          </a>
+          <a href="/politica-de-entrega">
+            <p><i class="fa fa-phone-alt mr-2"></i>Politica de Entrega</p>
+          </a>
+      </div>
+    </div>
+
+    <div style="width: 100%; background-color: #eee; height: 1px; " ></div>
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Fibra-Latino</span></strong
+          >. Todos los derechos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/noframework.waypoints.js"></script>
+    <script src="assets/js/email-decode.min.js"></script>
+    <script src="assets/js/validate.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

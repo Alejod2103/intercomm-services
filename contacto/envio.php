@@ -1,6 +1,6 @@
 <?php
 
-$destino = "alejod2103@gmail.com";
+$destino = "contact@multiservicecall.com";
 //Esto es al correo que se enviara el mail
 
 $nombre = $_POST['nombre'];

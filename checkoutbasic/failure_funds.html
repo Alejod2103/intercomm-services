@@ -1,0 +1,150 @@
+<html>
+  <head>
+    <meta charset="UTF-8" >
+    <script type="text/javascript" src="whatsapp/main.js" ></script>
+    <title>Fail Checkout</title>
+    <link rel="stylesheet" href="whatsapp/dist/css/all.css" type='text/css'>
+    <link href='whatsapp/dist/css/animate.min.css' rel='stylesheet' type='text/css'/>
+    <link href="whatsapp/whatsapp.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+  </head>
+    <style>
+      body {
+        text-align: center;
+        padding: 40px 0;
+        background: #EBF0F5;
+      }
+        .card h1 {
+          color: #881D1D;
+          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+          font-weight: 900;
+          font-size: 40px;
+          margin-bottom: 10px;
+        }
+        .card p {
+          color: #404F5E;
+          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+          font-size:20px;
+          margin: 0;
+        }
+      .card i {
+        color: #881D1D;
+        font-size: 100px;
+        line-height: 200px;
+        margin-left:-15px;
+      }
+      .card {
+        background: white;
+        padding: 60px;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px #C8D0D8;
+        display: inline-block;
+        margin: 0 auto;
+      }
+
+      .card span{
+        position: relative;
+        color: #404F5E;
+          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+          font-size:20px;
+          margin: 0;
+      }
+
+      .card a{
+        position: relative;
+        color: #404F5E;
+        font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+        font-size: 18px;
+        margin: 0;
+      }
+
+      .button-container{
+        position: relative;
+        justify-content: center;
+      }
+
+      .button{
+        max-width: 600px;
+        max-height: 60px;
+        cursor: pointer;
+        border-radius: 50px;
+        background-color: 881D1D;
+      }
+
+      .button h2{
+        text-decoration: none;
+        color: #eee;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    </style>
+    <body>
+
+      <div class="card">
+      <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
+        <i class="fa-regular fa-circle-xmark"></i>
+      </div>
+        <h1>Pago Fallido - Fondos Insuficientes</h1>
+        <a style="text-decoration: none;" href="/">
+          <div class="button-container">
+            <div class="button" >
+              <h2>Regresar</h2>
+            </div>
+          </div>
+        </a> 
+        <p>Su tarjeta no tiene fondos suficientes <br/> Intentelo nuevamente con otra tarjeta.</p>
+        <span>Lea sobre nuestros </span><a href="/terms-of-service">Terminos y Condiciones</a> | <a href="/politica-de-reembolso">Politica de Reembolso</a>
+      </div>
+
+      
+    <section>    
+            <div id="whatsapp-chat" class="hide">
+                <div class="header-chat">
+                    <div class="head-home">
+                        <h3>Hola!</h3>
+                        <p>Seleccione una opcion para ayudarle mejor o envíenos un mail a contact@multiservicecall.com</p>
+                    </div>
+                    <div class="get-new hide">
+                        <div id="get-label"></div>
+                        <div id="get-nama"></div>
+                    </div>
+                </div>
+                <div class="home-chat">
+                    <!-- Info Contact Start -->
+                    <a class="informasi" href="javascript:void" title="Chat Whatsapp">
+                        <div class="info-avatar"><img src="whatsapp/dist/img/male.svg" /></div>
+                        <div class="info-chat">
+                            <span class="chat-label">Soporte de Servicios</span>
+                            <span class="chat-nama">Soporte 24/7 incluido en tu servicio</span>
+                        </div>
+                        <span class="my-number">17863058376</span>
+                    </a>
+                    <!-- Info Contact End -->
+                    <!-- Info Contact Start -->
+                    <a class="informasi" href="javascript:void" title="Chat Whatsapp">
+                        <div class="info-avatar"><img src="whatsapp/dist/img/female.svg" /></div>
+                        <div class="info-chat">
+                            <span class="chat-label">Reportes e Inconvenientes</span>
+                            <span class="chat-nama">Reporte Inconvenientes y cualquier problema con nuestro servicio</span>
+                        </div>
+                        <span class="my-number">17863058376</span>
+                    </a>
+                    <!-- Info Contact End -->
+                    <div class="hensob-msg">Contactenos al <b>+1(813)291-3383</b> de <i>7:00am a 10:00pm</i></div>
+                </div>
+                <div class="start-chat hide">
+                    <div class="first-msg"><span>Hola!👋 ¿Como puedo ayudarte el dia de hoy?</span></div>
+                    <div class="hensob-msg"><textarea id="chat-input" placeholder="Escribe tu mensaje" row="1"></textarea> <a href="javascript:void;" style="font-size: 14px; width: 100px;" id="send-it">enviar</a></div>
+                </div>
+                <div id="get-number"></div>
+                <a class="close-chat" href="javascript:void">×</a>
+            </div>
+            <a class="hensobshow-chat" href="javascript:void" title="Show Chat"><i class="fab fa-whatsapp fa-lg"></i></a>
+    </section>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="whatsapp/main.js"></script>
+    </body>
+</html>
