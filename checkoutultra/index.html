@@ -182,24 +182,29 @@
                 <div class="signature-container"  id="signature-container" style="display: none;">
                   <h3>Firma</h3>
                   <p>Por favor firma en el siguiente campo para verificar que aceptas los términos y condiciones:</p>
+                  <br>
                   <canvas id="signature-pad" ></canvas>
-                  <button id="clear-btn" >Borrar</button>
-                  <button id="submit-btn" >Guardar y proceder al pago</button>
+                  <br>
+
+                  <div class="sign-buttons-container">
+                    <button id="clear-btn" >Borrar</button>
+                    <button id="submit-btn" >Guardar y proceder al pago</button>
+                  </div>
                 </div>
 
                 <div class="inputBox">
                   <input type="radio" id="agree" value="agree" name="terms-radio">
                   <label for="agree">Aceptar</label>
                 </div>
+
                 <div class="inputBox">
                   <input type="radio" id="disagree" value="disagree" name="terms-radio">
                   <label for="agree">Salir</label>
                 </div>
-                <button type="button" id="sign-btn">Confirmar</button>
               </div>
 
       
-             <button type="submit" class="submit-btn" disabled>Pagar Ahora</button>
+             <button type="submit" id="pay-button" class="submit-btn" disabled>Pagar Ahora</button>
       
           </form>
           
@@ -278,9 +283,10 @@
 var phone = document.getElementById('tel').value;
 var address = document.getElementById('address').value;
 
+const submitBtn = document.getElementById('pay-btn');
+
 document.getElementById('terms-checkbox').addEventListener('change', function () {
   document.getElementById('terms-and-conditions').style.display = this.checked ? 'block':'none';
-  document.getElementById('submit-btn').disabled = !this.checked;
 });
 
 document.querySelectorAll('[name="terms-radio"]').forEach(function (radio) {
@@ -289,7 +295,7 @@ document.querySelectorAll('[name="terms-radio"]').forEach(function (radio) {
       document.getElementById('signature-container').style.display = 'block';
     } else {
       document.getElementById('signature-container').style.display = 'none';
-      document.getElementById('submit-btn').disabled = true;
+      submitBtn.disabled = true;
     }
   });
 });
@@ -297,40 +303,54 @@ document.querySelectorAll('[name="terms-radio"]').forEach(function (radio) {
 var signaturePad = new SignaturePad(document.getElementById('signature-pad'));
 
 document.getElementById('clear-btn').addEventListener('click', function () {
+  event.preventDefault();
   signaturePad.clear();
 });
 
+signed = false;
+
 document.getElementById('submit-btn').addEventListener('click', function () {
+  
+  event.preventDefault();
+
   if (signaturePad.isEmpty()) {
     alert('Por favor firma antes de hacer el pago');
+    submitBtn.disabled = false;
     return;
+  } else {
+    signed = true;
+    submitBtn.disabled = false;
+    submitForm();
   }
 
   var signatureData = signaturePad.toDataURL('image/png');
 
-  fetch('sign.php', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      signature: signatureData,
-      name: name,
-      phone: phone,
-      address: address,
+  if(signed){
+    submitForm();
+    fetch('sign.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        signature: signatureData,
+        name: name,
+        phone: phone,
+        address: address,
+      })
     })
-  })
-  .then(response => response.json())
-  .then(data => {
-    if(data.success) {
-      document.getElementById('submit-btn').disabled = false;
-    } else {
-      console.log('Sucedio un error con el pago');
-    }
-  })
-  .catch(error => {
-    console.log('Error al guardar firma:', error);
-  });
+    .then(response => response.json())
+    .then(data => {
+      if(data.success) {
+        document.getElementById('submit-btn').disabled = false;
+      } else {
+        console.log('sucedio un error con la firma y el pago ');
+      }
+    })
+    .catch(error => {
+      console.log('Error al guardar firma:', error);
+    });
+  }
 });
   </script>
 

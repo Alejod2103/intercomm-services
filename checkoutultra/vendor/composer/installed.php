@@ -3,7 +3,7 @@
         'name' => 'root/contacto',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'c522711a5b16b397887e7f021c7783387813b6f6',
+        'reference' => 'ac16d8fd77370d6087566abaa3f943f21ddb696a',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -112,7 +112,7 @@
         'root/contacto' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'c522711a5b16b397887e7f021c7783387813b6f6',
+            'reference' => 'ac16d8fd77370d6087566abaa3f943f21ddb696a',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
